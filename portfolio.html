@@ -15,39 +15,40 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a class="site-logo header-logo" href="./index.html"
-          ><span class="logo">Web</span>Studio</a
-        >
-        <ul class="header-list">
-          <li>
-            <a class="header-link" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a class="header-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="header-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="header-list">
-          <li>
-            <a class="header-contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-contact" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="header-container">
+        <div class="header-left">
+          <div>
+            <a class="site-logo header-logo" href="./index.html"><span class="logo">Web</span>Studio</a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li>
+                <a class="header-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="header-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="header-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <address>
+          <ul class="header-list">
+            <li>
+              <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="header-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section">
+        <div class="container">
         <ul class="portfolio-nav">
           <li><button class="portfolio-button" type="button">All</button></li>
           <li>
@@ -60,9 +61,10 @@
           <li>
             <button class="portfolio-button" type="button">Marketing</button>
           </li>
-        </ul>
+        </ul></div>
 
-        <h1 hidden>Portfolio</h1>
+        <div class="container">
+        <h1 class="visually-hidden">Portfolio</h1>
         <ul class="portfolio-tiles">
           <li>
             <a href=""
@@ -159,7 +161,7 @@
               <p>Web Site</p>
             </a>
           </li>
-        </ul>
+        </ul></div>
       </section>
     </main>
     <footer class="footer">

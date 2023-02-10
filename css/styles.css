@@ -12,7 +12,12 @@
   --text-color-white: #fff;
   --background-color-white: #fff;
 }
-
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   /*common*/
   font-family: 'Roboto', sans-serif;
@@ -34,6 +39,40 @@ body {
 .logo {
   color: var(--primary-brand-iris);
 }
+/*.header-logo {
+  display: block;
+  align-items: center;
+}*/
+
+.container {
+  display: flex;
+  max-width: 1128px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 156px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ padding: 24px 0;
+  max-width: 1128px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-basis: auto;
+  flex-shrink: 0;
+}
+
 .header-link {
   color: var(--dark-navy-blue);
   font-weight: 500;
@@ -41,6 +80,10 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-basis: calc(100% / 3)-40px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -60,23 +103,56 @@ body {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--pressed-state-ocean);
-} /*common end*/
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*common end*/
+/*index*/
 .hero {
   background-color: var(--overlay-navy-blue-modal);
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-width: 1440px;
-  height: 600px;
-} /*index*/
+padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
+} 
 .title-hero {
   max-width: 496px;
   margin: 0 auto 48px;
-  padding-top: 188px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--text-color-white);
   font-size: 56px;
   line-height: 1.08;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-top: 188px;
 }
 .button-hero {
   color: var(--text-color-white);
@@ -100,10 +176,7 @@ body {
   background-color: var(--pressed-state-ocean);
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 156px;
-}
+
 .advantages-list h3 {
   color: var(--dark-navy-blue);
   font-weight: 500;
