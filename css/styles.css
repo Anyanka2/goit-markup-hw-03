@@ -54,6 +54,7 @@ body {
   max-width: 1128px;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid var(--accent-cornflower);
 }
 .header-left {
   display: flex;
@@ -174,7 +175,7 @@ img {
 }
 .advantages-list {
   display: flex;
-  
+
   align-items: flex-start;
   gap: 24px;
 }
@@ -224,7 +225,9 @@ img {
   text-align: center;
   margin-bottom: 72px;
   margin-top: 120px;
- 
+}
+.team h2 {
+  padding-top: 120px;
 }
 .team h3 {
   color: var(--dark-navy-blue);
@@ -243,6 +246,9 @@ img {
 }
 .team li {
   background: var(--background-color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list {
   display: flex;
@@ -288,7 +294,11 @@ img {
 }
 .portfolio-tiles li {
   list-style-type: none;
-  border: 1px solid var(--accent-cornflower);
+}
+.portfolio-name {
+  border-left: 1px solid var(--accent-cornflower);
+  border-right: 1px solid var(--accent-cornflower);
+  border-bottom: 1px solid var(--accent-cornflower);
 }
 .portfolio-tiles h2 {
   font-weight: 500;
@@ -309,8 +319,7 @@ img {
 .portfolio-tiles {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
-
+  gap: 24px;
   align-items: center;
 }
 .portfolio-img:nth-child(n + 7) {
@@ -333,9 +342,9 @@ img {
   padding-top: 16px;
   margin-bottom: 0;
   width: 264px;
-  text-align:justify;
+  text-align: justify;
 }
 .footer-logo {
   color: var(--light-mode-cloud);
   line-height: 1.16;
-  }
+}
