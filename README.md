@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
  
-https://anyanka2.github.io/goit-markup-hw-02/
+https://anyanka2.github.io/goit-markup-hw-03/
