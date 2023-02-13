@@ -139,7 +139,7 @@ img {
 }
 .title-hero {
   max-width: 496px;
-  margin-top: 120px;
+  margin-top: 188px;
   margin-left: auto;
   margin-right: auto;
   color: var(--text-color-white);
@@ -188,6 +188,7 @@ img {
 }
 .advantages-list li {
   list-style-type: none;
+  flex-basis: calc((100%-24px) / 4);
 }
 .services-list > li,
 .team-list {
@@ -333,7 +334,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  padding-top: 100px;
 }
 .footer-text {
   color: var(--accent-cornflower);
@@ -343,6 +343,11 @@ img {
   margin-bottom: 0;
   width: 264px;
   text-align: justify;
+}
+.footer-content {
+  display: inline-block;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 .footer-logo {
   color: var(--light-mode-cloud);
